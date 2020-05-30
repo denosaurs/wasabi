@@ -1,3 +1,5 @@
 # wasabi
 
-Wasm toolkit for Deno
+---
+> ⚠️ This project is a working project. Expect breaking changes.
+---
