@@ -1,9 +1,8 @@
 # wasabi
 
 This is a template repository for deno modules that want to use wasm. To use it simply click the
-<a class="btn btn-sm btn-primary ml-2" href="/denosaurs/wasabi/generate">Use this template</a>
-button to generate a new repo with all the stuff you need to get started writing rust and running
-it using wasm in deno.
+["Use this template"](https://github.com/denosaurs/wasabi/generate) button to generate a new repo
+with all the stuff you need to get started writing rust and running it using wasm in deno.
 
 ## Prerequisites
 
