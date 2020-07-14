@@ -13,23 +13,19 @@ with all the stuff you need to get started writing rust and running it using was
 ## Structure
 
 ```
-│  .gitignore     - A standard .gitignore file for ignoring build directories
-│  Cargo.toml     - A file describing the rust library being built
-│  LICENSE        - A standard license file you are free to change to fit your needs
-│  mod.ts         - The entry point for the deno module
-│  README.md      - This readme file
-│  test.ts        - Containing tests
-│  wasm.js        - A js file containing the built wasm and some glue code
-│
-├──scripts        - A directory for all development scripts
-│   build.ts      - The build script for generating the wasm.js file
-│
-├──src            - The rust libraries source code
-│   lib.rs        - The rust libraries entry point
-│
-├──pkg            - Ignored by .gitignore, used when building
-│
-└──target         - Ignored by .gitignore, used when building
+├── .gitignore     - A standard .gitignore file for ignoring build directories
+├── Cargo.toml     - A file describing the rust library being built
+├── LICENSE        - A standard license file you are free to change to fit your needs
+├── mod.ts         - The entry point for the deno module
+├── README.md      - This readme file
+├── test.ts        - Containing tests
+├── wasm.js        - A js file containing the built wasm and some glue code
+├── scripts        - A directory for all development scripts
+│   └──build.ts      - The build script for generating the wasm.js file
+├── src            - The rust libraries source code
+│   └──lib.rs        - The rust libraries entry point
+├── pkg            - Ignored by .gitignore, used when building
+└── target         - Ignored by .gitignore, used when building
 ```
 
 ## Building
