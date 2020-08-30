@@ -45,6 +45,7 @@ $ deno run -A scripts/build.ts
 Requires `wasm.js` to be built first.
 
 ```bash
+$ deno run -A ./scripts/build.ts
 $ deno test
 ```
 

@@ -1,6 +1,6 @@
-import { encode } from "https://deno.land/std@0.61.0/encoding/base64.ts";
+import { encode } from "https://deno.land/std@0.67.0/encoding/base64.ts";
 import { compress } from "https://deno.land/x/lz4@v0.1.2/mod.ts";
-import Terser from "https://jspm.dev/terser@4.8.0";
+import { minify } from "https://jspm.dev/terser@5.2.1";
 
 const name = "wasabi";
 
@@ -72,7 +72,7 @@ const source = `import * as lz4 from "https://deno.land/x/lz4@v0.1.2/mod.ts";
 const init = await Deno.readTextFile(`pkg/${name}.js`);
 
 log("minifying js");
-const output = Terser.minify(`${source}\n${init}`, {
+const output = await minify(`${source}${init}`, {
   mangle: { module: true },
   output: {
     preamble: "//deno-fmt-ignore-file",
