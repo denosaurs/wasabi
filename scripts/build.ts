@@ -83,7 +83,7 @@ if (output.error) {
   err(`encountered error when minifying: ${output.error}`);
 }
 
-const reduction = new Blob([(`${source}\n${init}`)]).size -
+const reduction = new Blob([(`${source}${init}`)]).size -
   new Blob([output.code]).size;
 log(`minified js, size reduction: ${reduction} bytes`);
 
