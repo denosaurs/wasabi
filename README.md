@@ -1,8 +1,10 @@
 # wasabi
 
-This is a template repository for deno modules that want to use wasm. To use it simply click the
-["Use this template"](https://github.com/denosaurs/wasabi/generate) button to generate a new repo
-with all the stuff you need to get started writing rust and running it using wasm in deno.
+This is a template repository for deno modules that want to use wasm. To use it
+simply click the
+["Use this template"](https://github.com/denosaurs/wasabi/generate) button to
+generate a new repo with all the stuff you need to get started writing rust and
+running it using wasm in deno.
 
 ## Prerequisites
 
@@ -102,7 +104,9 @@ test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out (2ms)
 
 ### Contribution
 
-Pull request, issues and feedback are very welcome. Code style is formatted with `deno fmt` and commit messages are done following [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) spec.
+Pull request, issues and feedback are very welcome. Code style is formatted with
+`deno fmt` and commit messages are done following
+[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) spec.
 
 ### Licence
 
