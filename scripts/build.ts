@@ -22,13 +22,17 @@ export async function build() {
   console.log(`read wasm                      (size: ${wasm.length} bytes)`);
   const compressed = compress(wasm);
   console.log(
-    `compressed wasm using lz4      (reduction: ${wasm.length -
-      compressed.length} bytes, size: ${compressed.length} bytes)`,
+    `compressed wasm using lz4      (reduction: ${
+      wasm.length -
+      compressed.length
+    } bytes, size: ${compressed.length} bytes)`,
   );
   const encoded = encode(compressed);
   console.log(
-    `encoded wasm using base64      (increase: ${encoded.length -
-      compressed.length} bytes, size: ${encoded.length} bytes)`,
+    `encoded wasm using base64      (increase: ${
+      encoded.length -
+      compressed.length
+    } bytes, size: ${encoded.length} bytes)`,
   );
 
   const init = await Deno.readTextFile(`pkg/${name}.js`);
